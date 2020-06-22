@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
-import styles from './Counter.css';
+import styles from './Unicorn.css';
 import routes from '../../constants/routes.json';
 import {
   increment,
@@ -9,9 +9,9 @@ import {
   incrementIfOdd,
   incrementAsync,
   selectCount,
-} from './counterSlice';
+} from './unicornSlice';
 
-export default function Counter() {
+export default function Unicorn() {
   const dispatch = useDispatch();
   const value = useSelector(selectCount);
   return (
